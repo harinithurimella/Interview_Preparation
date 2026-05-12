@@ -1,0 +1,21 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+     int [] a = {1,5,7,8,2};
+     int max = a[0];
+     
+     for(int i = 1 ; i < a.Length; i ++){
+         if(max < a[i]){
+             max = a[i];
+         }
+     }
+     Console.WriteLine(max);
+     
+    }
+}
