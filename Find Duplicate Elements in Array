@@ -1,0 +1,34 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+
+public class HelloWorld
+{
+    
+    public static void Main(string[] args)
+    {
+    int [] arr = {1,2,2,3,3,4,5};
+    Dictionary<int,int> result = new Dictionary<int,int>();
+     
+     for(int i = 0 ; i < arr.Length ; i++){
+         if(!result.ContainsKey(arr[i])){
+          result[arr[i]] = 1;
+          
+          
+         }
+         else {
+             result[arr[i]]++ ;
+         }
+     }
+     foreach(var i in result){
+         if(i.Value > 1){
+             Console.WriteLine(i.Key);
+         }
+     }
+     
+    }
+}
