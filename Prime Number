@@ -1,0 +1,35 @@
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        int k = 16;
+        bool isPrime = true;
+
+        if(k <= 1)
+        {
+            isPrime = false;
+        }
+        else
+        {
+            for(int i = 2; i < k; i++)
+            {
+                if(k % i == 0)
+                {
+                    isPrime = false;
+                    break;
+                }
+            }
+        }
+
+        if(isPrime)
+        {
+            Console.WriteLine("is Prime");
+        }
+        else
+        {
+            Console.WriteLine("is not prime");
+        }
+    }
+}
